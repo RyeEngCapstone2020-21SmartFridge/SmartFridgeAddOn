@@ -367,3 +367,4 @@ FodyWeavers.xsd
 
 # Zip files for deploying lambda functions
 .lambdas/*.zip
+ImageCaptureRelease/
