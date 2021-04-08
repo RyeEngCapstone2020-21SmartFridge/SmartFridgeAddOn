@@ -9,7 +9,7 @@ namespace ImageCaptureSystem
     public static class AWSUpload
     {
         private const string bucketName = "smart-fridge-pictures";                              // The name of the S3 Bucket
-        private const string FilePath = @"..\..\..\..\images\FridgePicture.jpg";                        // Path of image
+        private const string FilePath = @".\images\FridgePicture.jpg";                        // Path of image
 
         public static readonly RegionEndpoint BucketRegion = RegionEndpoint.USEast1;            // Server region declaration
         private static readonly IAmazonS3 S3Client = new AmazonS3Client(BucketRegion);          // Instantiating S3 Client

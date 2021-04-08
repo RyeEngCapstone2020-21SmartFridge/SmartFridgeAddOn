@@ -16,7 +16,7 @@ namespace GUI
     public partial class MainWindow
     {
 
-        private const string FilePath = @"..\..\..\..\images\FridgePicture.jpg";
+        private const string FilePath = @".\images\FridgePicture.jpg";
         public MainWindow()
         {
             InitializeComponent();
