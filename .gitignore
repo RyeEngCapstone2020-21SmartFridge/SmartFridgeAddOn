@@ -366,4 +366,4 @@ FodyWeavers.xsd
 .vscode/*
 
 # Zip files for deploying lambda functions
-*.zip
+.lambdas/*.zip
