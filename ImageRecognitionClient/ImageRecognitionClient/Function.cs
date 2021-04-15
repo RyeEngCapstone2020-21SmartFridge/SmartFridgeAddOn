@@ -99,6 +99,18 @@ namespace ImageRecognitionClient
                 new PostModelOutputsRequest()
                 {
                     ModelId = Environment.GetEnvironmentVariable("Clarifai_Model_Id"),
+                    Model = new Model()
+                    {
+                        Id = Environment.GetEnvironmentVariable("Clarifai_Model_Id"),
+                        OutputInfo = new OutputInfo()
+                        {
+                            OutputConfig = new OutputConfig()
+                            {
+                                MaxConcepts = 100,
+                                MinValue = Convert.ToSingle(Environment.GetEnvironmentVariable("Min_Confidence")),
+                            }
+                        }
+                    },
                     Inputs =
                     {
                         new List<Input>()
